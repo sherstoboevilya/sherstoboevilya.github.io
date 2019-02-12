@@ -18,7 +18,7 @@ function chkGender(){
 	if(!!$("#blckGender > #textError").html()) $("#blckGender > #textError").remove();
 	if($("#selectGender").val() == "gender"){
 		$("#selectGender").attr("style", "border: 1px solid #ff1e1e");
-		$("<p style='margin: 0; color:red' id='textError'>Выберите ваш пол!</p>").insertAfter($("#selectGender"));
+		$("<p style='margin: 0; color:red; text-align: right' id='textError'>Выберите ваш пол!</p>").insertAfter($("#selectGender"));
 	} else {
 		$("#selectGender").removeAttr("style");
 		male = $("#selectGender option:selected").val();
@@ -104,7 +104,7 @@ function chkIIN(){
 
 	if(inpIIN.length < 12){
 		$("#IIN").attr("style", "border: 1px solid #ff1e1e");
-		$("<p style='margin: 0; color:red' id='textError'>Заполните данные!</p>").insertAfter($("#IIN"));
+		$("<p style='margin: 0; color:red; text-align: right' id='textError'>Заполните данные!</p>").insertAfter($("#IIN"));
 	} else {
 		$("#IIN").removeAttr("style");
 	}
@@ -122,7 +122,7 @@ function chkIIN(){
 function chkErrorIIN(){
 	$("#IIN").next().remove();
 	$("#IIN").attr("style", "border: 1px solid #ff1e1e");
-	$("<p style='margin: 0; color:red' id='textError'>ИИН не совпадает</p>").insertAfter($("#IIN"));
+	$("<p style='margin: 0; color:red; text-align: right' id='textError'>ИИН не совпадает</p>").insertAfter($("#IIN"));
 }
 
 
@@ -150,7 +150,7 @@ function chkLastNum(j){
 
 
 function chkErrorEmpty(elem, text){
-	this.text = "<p style='margin: 0; color:red' id='textError'>" + text + "</p>";
+	this.text = "<p style='margin: 0; color:red; text-align: right' id='textError'>" + text + "</p>";
 	if(!!$(elem).next().html()) $(elem).next().remove();
 	if(!$(elem).val()){
 		$(elem).attr("style", "border: 1px solid #ff1e1e");
@@ -161,7 +161,7 @@ function chkErrorEmpty(elem, text){
 }
 
 function chkErrorAge(elem, text){
-	this.text = "<p style='margin: 0; color:red' id='textError'>" + text + "</p>";
+	this.text = "<p style='margin: 0; color:red; text-align: right' id='textError'>" + text + "</p>";
 	if(!!$(elem).next().html()) $(elem).next().remove();
 	$(elem).attr("style", "border: 1px solid #ff1e1e");
 	$(this.text).insertAfter($(elem));
