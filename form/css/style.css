@@ -23,6 +23,7 @@ button{
   align-items: center;
   justify-content: center;
   font-family: 'Roboto', sans-serif;
+  font-size: 30px;
 }
 
 .dvForm{
@@ -52,4 +53,8 @@ button{
 p{
   font-family: roboto;
   color: #777777;
+}
+
+.block{
+  margin: 5px 0;
 }
