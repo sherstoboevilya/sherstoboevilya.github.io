@@ -1,0 +1,50 @@
+.allEl{
+  padding: 20px 20px 20px;
+}
+
+select{
+  width: 49%;
+}
+
+button{
+  margin-top: 20px;
+  width: 140px;
+}
+
+
+.hdForm>p{
+  background: #F5F5F5;
+  margin: 0;
+  border-radius: 5px 5px 0 0;
+  height: 45px;
+  text-align: center;
+  border-bottom: 1px solid #cfcfcf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.dvForm{
+  position: relative;
+  margin: 150px auto 0 auto;
+  width: 300px;
+  border: 1px solid #dad4d4;
+  border-radius: 6px;
+}
+
+.blckButton{
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.Errors{
+  color: red;
+}
+
+.blckLeft, .blckRight{
+  margin-top: 20px;
+  margin: 0px;
+  width: 100%;
+}

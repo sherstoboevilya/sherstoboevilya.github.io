@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body>
+	<div class="dvForm">
+		<div class="hdForm">
+			<p>Форма</p>
+		</div>
+		<form method="post" action="" class="allEl">
+			<div id="blckDate">
+				<p class="blckLeft">Дата рождения:</p>
+				<input type="date" id="chsDate" placeholder class="blckRight" value="1997-09-11">
+			</div>
+			<div id="blckGender">
+				<p class="blckLeft">Пол:</p>
+				<select id="selectGender" class="blckRight">
+					<option value="gender">Выберите пол</option>
+					<option value="male">Мужской</option>
+					<option value="female">Женский</option>
+				</select>
+			</div>
+			<div id="blckIIN">
+				<p class="blckLeft">ИИН:</p>
+				<input id="IIN" type="text" placeholder="Введите ИИН" maxlength="12" class="blckRight" value="970911301296">
+			</div>
+			<div class = "blckButton">
+				<button onclick="chkAll()" type="button">Отправка</button>
+			</div>
+			<div class="Errors">
+			</div>
+		</form>
+	</div>
+	<script src="js/script.js"></script>
+
+</body>
+</html>
