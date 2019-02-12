@@ -10,6 +10,8 @@ function chkAll(){
 	splitArr();
 	conIIN();
 	chkIIN();
+	if($("p").is("#textError")) return;
+	alert("Всё ок");
 }
 
 
@@ -166,3 +168,5 @@ function chkErrorAge(elem, text){
 	$(elem).attr("style", "border: 1px solid #ff1e1e");
 	$(this.text).insertAfter($(elem));
 }
+
+
