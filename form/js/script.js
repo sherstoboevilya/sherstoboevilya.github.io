@@ -11,7 +11,7 @@ function chkAll(){
 	conIIN();
 	chkIIN();
 	if($("p").is("#textError")) return;
-	alert("Всё ок");
+	alert("иин валидный");
 }
 
 
