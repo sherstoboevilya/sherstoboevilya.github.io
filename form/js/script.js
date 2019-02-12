@@ -124,7 +124,7 @@ function chkIIN(){
 function chkErrorIIN(){
 	$("#IIN").next().remove();
 	$("#IIN").attr("style", "border: 1px solid #ff1e1e");
-	$("<p style='margin: 0; color:red; text-align: right' id='textError'>ИИН не совпадает</p>").insertAfter($("#IIN"));
+	$("<p style='margin: 0; color:red; text-align: right' id='textError'>ИИН валидный</p>").insertAfter($("#IIN"));
 }
 
 
