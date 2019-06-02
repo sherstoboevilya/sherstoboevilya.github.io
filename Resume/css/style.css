@@ -1,0 +1,104 @@
+#back{
+	background-color: white;
+	margin: 50px 50px;
+}
+
+#hexagon {
+	margin: 0 auto 90px;
+	width: 200px;
+	height: 110px;
+	background: black;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center
+}
+#hexagon>p {
+    margin: 0;
+}
+
+#hexagon:before {
+	content: "";
+	position: absolute;
+	top: -50px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 50px solid black;
+}
+#hexagon:after {
+	content: "";
+	position: absolute;
+	bottom: -50px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-top: 50px solid black;
+}
+
+#blckHead{
+	padding: 80px 50px; 
+}
+
+.blckTitle{
+	text-align: center;
+}
+
+.blckTitle>p{
+	font-size: 40px;
+	font-family: 'Roboto', sans-serif;
+}
+
+#hexagon>p{
+	text-align: center;
+	color: white;
+	font-size: 60px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.blckLeft{
+	text-align: center;
+}
+
+
+.blckRight{
+	text-align: center;
+
+}
+
+.txtTitle{
+	margin: 0;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.left{
+	padding: 20px;
+	padding-right: 40px;
+}
+
+.right{
+	padding: 20px;
+	padding-left: 40px;
+}
+
+
+.Cont{
+	margin-bottom: 50px;
+}
+
+
+.Elm{
+	margin: 20px 0;
+}
+
+.blckLine{
+	background-color: #dee2e6;
+	width: 2px;
+	height: 90%;
+	margin: auto;
+}
