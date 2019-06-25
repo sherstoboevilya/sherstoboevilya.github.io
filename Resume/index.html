@@ -122,5 +122,43 @@
 				</div>
 			</div>
 		</div>
+	
+		<script>
+		function arrVal(numClass){
+			var arr = [];
+				//Значение всех задач
+				arr[0] = +document.getElementsByClassName('val')[numClass].getElementsByTagName('td')[0].innerHTML;
+				//Значение задач на вчера
+				arr[1] = +document.getElementsByClassName('val')[numClass].getElementsByTagName('td')[1].innerHTML;
+				//Тег содержащий значение на вчера
+				arr[2] = document.getElementsByClassName('Yesterday')[numClass];
+				//Тег содержащий значение на сегодня
+				arr[3] = document.getElementsByClassName('Today')[numClass];
+				//Значение задач на сегодня
+				arr[4] = +document.getElementsByClassName('val')[numClass].getElementsByTagName('td')[2].innerHTML;
+
+				return arr;
+			}
+
+
+			function countItem(arr){
+				var all = arr[0],
+				allYest = arr[1],
+				Yesterday = arr[2],
+				Today = arr[3],
+				allToday = arr[4];
+
+				allToday =  Math.round((allToday + allYest)*100/all);
+				allYest =  Math.round(allYest*100/all);
+				
+				Yesterday.setAttribute("style", "width: " + allYest + "%");
+				Today.setAttribute("style", "width: " + allToday + "%");
+			}
+
+			countItem(arrVal(0));
+			countItem(arrVal(1));
+
+
+		</script>
 	</body>
 	</html>
