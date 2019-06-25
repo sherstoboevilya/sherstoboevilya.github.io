@@ -1,109 +1,63 @@
-p{
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 20px;
+.allEl{
+  padding: 20px 20px 20px;
 }
 
-#back{
-	background-color: white;
-	margin: 50px 50px;
+select{
+  width: 49%;
 }
 
-#hexagon {
-	margin: 0 auto 90px;
-	width: 200px;
-	height: 110px;
-	background: black;
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center
+button{
+  margin-top: 20px;
+  width: 140px;
 }
-#hexagon>p {
+
+
+.titleForm {
+  p{
+    background: #F5F5F5;
     margin: 0;
+    border-radius: 5px 5px 0 0;
+    height: 45px;
+    text-align: center;
+    border-bottom: 1px solid #cfcfcf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+  }
 }
 
-#hexagon:before {
-	content: "";
-	position: absolute;
-	top: -50px; 
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 100px solid transparent;
-	border-right: 100px solid transparent;
-	border-bottom: 50px solid black;
-}
-#hexagon:after {
-	content: "";
-	position: absolute;
-	bottom: -50px; 
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 100px solid transparent;
-	border-right: 100px solid transparent;
-	border-top: 50px solid black;
+#FormIIN{
+  position: relative;
+  margin: 150px auto 0 auto;
+  width: 300px;
+  border: 1px solid #dad4d4;
+  border-radius: 6px;
 }
 
-#blckHead{
-	padding: 80px 50px; 
+.blockButton{
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
 
-.blckTitle{
-	text-align: center;
+.Errors{
+  color: red;
 }
 
-.blckTitle>p{
-	font-size: 40px;
-	font-family: 'Roboto', sans-serif;
+.blockLeft, .blockRight{
+  margin-top: 20px;
+  margin: 0px;
+  width: 100%;
 }
 
-#hexagon>p{
-	text-align: center;
-	color: white;
-	font-size: 60px;
-	font-family: 'Roboto', sans-serif;
-}
-
-.blckLeft{
-	text-align: center;
+.textError{
+  margin: 0;
+  color:red;
+  text-align: right;
 }
 
 
-.blckRight{
-	text-align: center;
-
-}
-
-.txtTitle{
-	margin: 0;
-	font-size: 20px;
-	font-family: 'Open Sans', sans-serif;
-}
-
-.left{
-	padding: 20px;
-	padding-right: 40px;
-}
-
-.right{
-	padding: 20px;
-	padding-left: 40px;
-}
-
-
-.Cont{
-	margin-bottom: 50px;
-}
-
-
-.Elm{
-	margin: 20px 0;
-}
-
-.blckLine{
-	background-color: #dee2e6;
-	width: 2px;
-	height: 90%;
-	margin: auto;
+.borderError{
+  border: 1px solid #ff1e1e;
 }
